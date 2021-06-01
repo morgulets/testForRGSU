@@ -1,0 +1,14 @@
+
+// colors
+$primary:#3464E0; 
+$light-gray:#C3CAD6; 
+
+$darker-color:darken($primary,20%);
+$lighter-color:lighten($primary,20%);
+
+$dark-gray-color:darken($light-gray,20%);
+
+
+
+// transition
+$luxe:all .2s linear;

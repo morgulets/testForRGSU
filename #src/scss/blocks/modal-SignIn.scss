@@ -1,0 +1,79 @@
+.modal_SignIn{
+  width: 49rem;
+  height: 40.8rem;
+
+  padding-bottom: 5.9rem;
+  padding-left: 6.8rem;
+  padding-right: 8.2rem;
+
+  
+
+  &:before{
+    content: "";
+    display: block;
+
+    width: 47.2rem;
+    height: 30rem;
+
+    background: white;
+    opacity: .8;
+
+    border-radius: 4px;
+    
+    position: absolute;
+    top: -21px;
+    left: 9px;
+    z-index: -2;
+  }
+  &:after{
+    content: "";
+    display: block;
+
+    width: 46.2rem;
+    height: 33rem;
+
+    background: white;
+    opacity: .7;
+
+    border-radius: 4px;
+
+    position: absolute;
+    top: -38px;
+    left: 14px;
+    z-index: -1;
+  }
+}
+
+.modal__SignIn_margin{
+  margin-bottom: 4.1rem;
+}
+
+.form__block_emailMargin{
+  margin-bottom: 1.4rem;
+}
+
+.form__block_passMargin{
+  margin-bottom: 4.2rem;
+}
+
+.form__btn_TheSameStyles{
+background-color: $primary;
+color: white;
+}
+
+.form__btn_forgetPass{
+ color: $primary;
+ transition: $luxe;
+
+  &:hover{
+    background-color: rgb(226, 219, 219);
+  }
+}
+
+
+
+
+
+
+
+

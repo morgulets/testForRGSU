@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>gulp</title>
+</head>
+<body>
+  <header class="header">
+  <div class="container">
+    <a href="#" class="logo">
+      <div class="logo__img">
+        <img src="img/logo/logo.svg" alt="логотип сайта">
+      </div>
+      <div class="logo__name">
+        Портал НПР РГСУ
+      </div>
+    </a>
+    
+    <nav class="nav">
+      <a href="#" class="nav__item">Новости</a>
+      <a href="#" class="nav__item nav__item_active">Преподаватели</a>
+      <a href="#" class="nav__item">Вакансии</a>
+      <a href="#" class="nav__item">Объявления</a>
+      <a href="#" class="nav__item">Мероприятия</a>
+    </nav>
+    
+      <button class="btn-SignIn">
+        <img class="btn-SignIn__img" src="img/btn/door.svg" alt="Вход на сайт">
+        <span class="btn-SignIn__text">Вход на сайт</span>
+      </button>
+  </div>
+ 
+  
+  
+</header>;
+  
+  <div class="modal-wrapper1">
+  <div class="modal modal_SignIn">
+    <div class="modal__titles modal__SignIn_margin">
+        <a href="#" class="modal__title modal__title_active modal__title_signIn">Авторизация</a>
+        <a href="#" class="modal__title modal__title_CheckIn">Регистрация</a>
+    </div>
+
+    <form class="form" action="#">
+
+       <div class="form__block form__block_emailMargin">
+         <label class="form__logo" for="email2">Ваш email <span class="form__starColor">*</span></label>
+         <input class="form__input" type="text" id="email2" placeholder="Укажите адрес электронной почты">
+       </div>
+
+       <div class="form__block form__block_passMargin">
+         <label class="form__logo" for="password">Введите пароль<span class="form__starColor">*</span></label>
+         <input class="form__input" type="password" id="password" placeholder="*****">
+       </div>
+
+       
+
+
+
+       <div class="form__blockForBtns form__blockForBtns_signIn">
+         <button class="form__btn form__btn_TheSameStyles">Добавить запись</button>
+         <button class="form__btn form__btn_forgetPass">Забыли пароль?</button>
+       </div>
+
+    </form>
+    
+
+  </div>
+</div>
+;
+  <div class="modal-wrapper2">
+  <div class="modal modal_CheckIn">
+    <div class="modal__titles modal__CheckIn_margin">
+        <a href="#" class="modal__title modal__title_signIn">Авторизация</a>
+        <a href="#" class="modal__title modal__title_active modal__title_CheckIn">Регистрация</a>
+    </div>
+
+    <form class="form" action="#">
+
+       <div class="form__block form__block_margin">
+         <label class="form__logo" for="name">ФИО<span class="form__starColor">*</span></label>
+         <input class="form__input form__input_width" type="text" id="name" placeholder="Фамилия Имя Отчество">
+       </div>
+
+       <div class="form__wrapper">
+        <div class="form__block form__block_margin">
+          <label class="form__logo" for="email">Email<span class="form__starColor">*</span></label>
+          <input class="form__input form__input_width" type="email" id="email" placeholder="Адрес будет логином на портале">
+        </div>
+        <div class="form__block form__block_margin">
+          <label class="form__logo" for="tel">Телефон<span class="form__starColor">*</span></label>
+          <input class="form__input form__input_width" type="tel" id="tel" placeholder="+7(___)___-__-__">
+        </div>
+       </div>
+
+       
+
+       
+       <div class="form__wrapper">
+        <div class="form__block form__block_margin">
+          <label class="form__logo" for="snils">СНИЛС<span class="form__starColor">*</span></label>
+          <input class="form__input form__input_width" type="number" id="snils" min="11" max="11" placeholder="___-___-__">
+        </div>
+        <div class="form__block form__block_margin">
+          <label class="form__logo" for="data">Дата рождения<span class="form__starColor">*</span></label>
+          <input class="form__input form__input_width form__input-date" type="text" placeholder="__.__.____">
+        </div>
+       </div>
+
+
+      <div class="form__block form__block_marg-flexForCheckBox">
+        <input checked class="form__checkbox" type="checkbox" id="check">
+        <label class="form__logo form__logo_checkbox-m0" for="check">Согласен на обработку моих персональных данных<span class="form__starColor">*</span></label>
+      </div>
+
+      <div class="form__block form__block_marg-flexForCheckBox">
+        <input class="form__checkbox" type="checkbox" id="checkMessages">
+        <label class="form__logo form__logo_checkbox-m0" for="checkMessages">Согласен на получение уведомлений и рассылок<span class="form__starColor">*</span></label>
+      </div>
+
+
+
+       <div class="form__blockForBtns form__blockForBtns_checkIn">
+         <button class="form__btn form__btn_TheSameStyles form__btn_width">Зарегистрироваться</button>
+         <button class="form__btn form__btn_cancel">Отказаться</button>
+       </div>
+
+    </form>
+    
+
+  </div>
+</div>;
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

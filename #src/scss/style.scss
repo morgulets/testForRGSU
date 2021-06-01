@@ -1,0 +1,79 @@
+
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@import "fonts.scss";
+@import "vendors/vars.scss";
+@import "blocks/header";
+@import "blocks/modal";
+@import "blocks/modal-SignIn.scss";
+@import "blocks/modal-CheckIn.scss";
+
+
+body,html{
+  font-size: 10px;
+  font-family: 'Russia';
+  font-style: normal;
+}
+body{
+    color: white;
+    background-color: $primary;
+    
+    .no-scroll{
+      overflow: hidden;
+    }
+}
+
+.container{
+  max-width: 100%;
+  padding: 0px 4rem 0px 6.4rem;
+}
+
+*,
+::after,
+::before{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+}
+ul,ol,li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+button{
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  &:focus{
+    outline: none;
+    border: 1px solid black;
+  }
+}

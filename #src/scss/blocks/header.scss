@@ -1,0 +1,83 @@
+
+.header>.container{
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  justify-content: space-between;
+  font-family: inherit;
+}
+.logo {
+  width: 24rem;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-family: inherit;
+}
+.logo__img {
+  width: 4rem;
+  height: 4.4rem;
+}
+.logo__name {
+  margin-left: 1.4rem;
+  font-size: 2.4rem;
+  font-family: inherit;
+  font-weight: 400;
+}
+.nav {
+  display: flex;
+  margin-left: 7.1rem;
+  margin-right: 7.4rem;
+}
+.nav__item {
+  margin-left: 3.7rem;
+
+
+  &:first-child{
+    margin: 0;
+  }
+
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 400;
+  color: #9CBAF0;
+
+  transition: all .2s linear;
+
+  &:hover{
+    color: white;
+  }
+}
+
+.nav__item_active{
+  color: white;
+}
+.btn-SignIn {
+  width: 17.5em;
+  height: 4.2rem;
+
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+
+  background-color: #1740AA;
+  color: white;
+
+  transition: all .2s linear;
+
+  &:hover{
+    background-color: #23418f;
+    transform: scale(1.04);
+  }
+}
+.btn-SignIn__img {
+  width: 1.8rem;
+  height: 2.5rem;
+}
+.btn-SignIn__text {
+  margin-left: 0.9rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
